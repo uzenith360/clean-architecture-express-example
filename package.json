@@ -1,0 +1,37 @@
+{
+  "name": "clean-architecture-express-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node -r dotenv/config dist/main.js",
+    "test": "jest --watchAll --collectCoverage",
+    "dev:build": "tsc",
+    "dev:serve": "nodemon -r dotenv/config -e js -w lib dist/main.js"
+  },
+  "keywords": [],
+  "author": "@uzenith360",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@uzenith360/utils": "^1.2.4",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongodb": "^6.9.0"
+  },
+  "devDependencies": {
+    "@types/ajv": "^0.0.5",
+    "@types/bcrypt": "^5.0.2",
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.12",
+    "@types/mongodb": "^4.0.6",
+    "@types/node": "^22.5.4",
+    "@types/supertest": "^6.0.2",
+    "ajv-formats": "^3.0.1",
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  }
+}
